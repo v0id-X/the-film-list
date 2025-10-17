@@ -94,7 +94,7 @@ const fetchTrendingMovies = async () =>{
 
         {trendingMovies.length > 0 && (
           <section className='trending'>
-            <h2>Trending Movies</h2>
+            <h2>Trending Searches</h2>
 
           <ul>
             {trendingMovies.map((movie,index)=>(
@@ -110,7 +110,7 @@ const fetchTrendingMovies = async () =>{
 
 
           <section className='all-movies'>
-            <h2>All Movies</h2>
+            <h2>Popular Movies</h2>
 
             {isLoading?(<Loading />):errorMsg?(
               <p className='text-red-400'>{errorMsg}</p>
